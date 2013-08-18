@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <title>TapTimer</title>
+    <style type="text/css">
+        ul {
+            text-align: center;
+            width: 100%;
+            display: block;
+            padding: 0;
+        }
+        ul.buttons li {
+            float: left;
+            display: block;
+            width: 100%;
+            padding: 1em 0;
+            color: white;
+            font-size: 3em;
+            font-family: sans-serif;
+        }
+
+        #start {
+            background-color: green;
+        }
+
+        #pause {
+            background-color: blue;
+        }
+
+        #stop {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="length" placeholder="length" value="60" />
+<span id="setlength">Update</span>
+<ul class="buttons">
+    <li id="start">start</li>
+    <li id="pause">pause</li>
+    <li id="stop">stop</li>
+</ul>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="timer.js"></script>
+<script type="text/javascript">
+    window.startController();
+</script>
+</body>
+</html>

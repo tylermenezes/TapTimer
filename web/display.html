@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <title>TapTimer</title>
+    <style type="text/css">
+        #digits {
+            text-align: center;
+            width: 100%;
+        }
+
+        #digits.warning {
+            color: red;
+        }
+
+        body.ended {
+            background-color: red;
+        }
+
+        #digits li {
+            list-style-type: none;
+            font-size: 45em;
+            display: inline;
+        }
+
+        #digits li:after {
+            content: ":";
+        }
+
+        #digits li:last-child:after {
+            content: "";
+        }
+    </style>
+</head>
+<body>
+    <ul id="digits">
+        <li id="minutes">minutes</li>
+        <li id="seconds">seconds</li>
+    </ul>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="timer.js"></script>
+    <script type="text/javascript">
+        window.startClient();
+    </script>
+</body>
+</html>
